@@ -1,0 +1,80 @@
+:root{
+    --background:rgb(35, 99, 173);
+    --text_color:rgb(247, 236, 236);
+    --warning:rgb(45, 45, 119);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0%;
+    background: var(--background);
+}
+nav{
+    display: flex;
+    max-width: 400px;
+    margin: 10px auto 0 auto;
+    
+}
+#line_1{
+    font-size: 20px;
+    position: relative;
+    width: fit-content;
+    border-radius: 20px;
+    background: var(--warning);
+    margin-left: auto;
+    margin-right: auto ;
+    padding: 10px;
+    color: var(--text_color);
+    transition: 2s;
+}
+#line_1::before{
+    content: "warning";
+    font-size: 27px;
+    position: absolute;
+    color: rgb(247, 6, 6);
+    transform: translate(30px, -34px);
+    display: inline;
+    border-radius: 10px 10px 0 0;
+    padding:1px 6px ;
+    background: var(--warning);
+    margin: 0 auto 0px auto;
+    width: fit-content;
+    border-top: 3px solid var(--warning);
+    animation: warning_border infinite 1s linear;
+}
+@keyframes warning_border{
+    0%{border-top:3px solid var(--warning)}
+    50%{ border-top: 0px solid var(--warning) ;}
+    100%{ border-top: 3px solid var(--warning);}
+}
+#line_1::after{
+    content: "Hello this webpage was created with JS, HTML, and CSS, and it is just for test.";
+    position: absolute;
+    transform: translate(5px, 2px);
+    max-width: 200px;
+    font-size: 12px;
+    height: 0px;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    overflow: hidden;
+    padding: 5px 0px 0px 2px;
+    background: var(--warning);
+    transition: height 0.5s ease;
+    animation: hi infinite linear;
+}
+
+#line_1:hover::after{
+    height: 50px;
+    transition-delay: 0.2s;
+}
+@keyframes hi{
+    0%{ transform: rotate(0deg);}
+    50%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+}
+
+
+
+
+  
