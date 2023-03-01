@@ -133,4 +133,13 @@ main{
     color: aliceblue;
     text-align: center;
 }
- 
+ @media only screen and ( max-width:600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+ }
