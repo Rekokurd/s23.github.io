@@ -103,20 +103,23 @@ main{
     user-select: none;
 }
 #div_1:hover{
- scale: 1.1;
- border: 7px solid rgb(6, 6, 66);
+ background: red;
 }
 #div_1::before{
-    content: "beta";
-    position: absolute;
-    font-size: 20px;
-    color: white;
-    background: red;
-    left: -10px; /* add this line */
-    top: 20px; /* add this line */
-    padding: 0px 1px;
+    content: "";
+    width: 270px;
     border-radius: 20px;
-    transform: rotate(-45deg) translate(-15px, 4px) skew(10deg) p;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: 1px;
+    left: 15px;
+    animation: brdr infinite linear 7s  ;
+}
+@keyframes brdr{
+    0%{ width: 270px;}
+    50%{ width: 0;}
+    100%{ width: 270px;}
 }
 #div_1::after {
     content:"";
@@ -153,6 +156,12 @@ main{
     padding: 0 30px;
     margin-top: 20px;
 }
+#div::after{
+    content: "hii";
+    font-size: 70px;
+    background-color: red;
+}
+
 ul {
     list-style-type: none;
 }
