@@ -33,6 +33,7 @@ nav{
     padding: 10px;
     color: var(--text_color);
     transition: 2s;
+    cursor: pointer;
 }
 #line_1::before{
     content: "warning";
