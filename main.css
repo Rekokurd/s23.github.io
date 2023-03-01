@@ -100,7 +100,7 @@ main{
 
 #div_1::after {
     content:"";
-    background-image: url(/pic/wallpaper.jpeg);
+    background-image: url(pic/wallpaper.jpeg);
     position: absolute;
     top:-20px;
     left: 70%;
