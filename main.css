@@ -116,6 +116,19 @@ main{
     left: 15px;
     animation: brdr infinite linear 7s  ;
 }
+#border{
+    width: 200px ;
+    content: "hello";
+    height: 200px;
+    border: 10px solid;
+    border-color: g;
+    border-radius: 900px;
+    z-index: -9;
+    position: relative;
+    color: green;
+    transform: skew(10deg, 20deg);
+    left: -90px;
+}
 @keyframes brdr{
     0%{ width: 270px;}
     50%{ width: 0;}
@@ -184,3 +197,4 @@ li{
         justify-self: center;
     }
  }
+ 
