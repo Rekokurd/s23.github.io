@@ -100,6 +100,7 @@ main{
     box-shadow: 0px 0px 20px blue;
     box-sizing: border-box;
     transition: 1s linear;
+    user-select: none;
 }
 #div_1:hover{
  scale: 1.1;
