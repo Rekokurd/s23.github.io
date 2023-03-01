@@ -61,13 +61,13 @@ nav{
     color: rgb(183, 135, 227);
     max-width: 200px;
     right: 20px;
-    left: 20px;
+    left: 10px;
     font-size: 12px;
     height: 0px;
     border-radius: 0px 0px 20px 20px;
     display: flex;
     overflow: hidden;
-    padding: 5px 0px 0px 2px;
+    padding: 10px 0px 0px 9px;
     background: var(--warning);
     transition: height 0.5s ease;
     animation: hi infinite linear;
@@ -85,39 +85,38 @@ main{
     width: fit-content;
     min-height: fit-content;
 }  
-#div_1{
-    position: relative;
+#div_1 {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    max-width: 300px;
     height: 300px;
     margin: 0%;
     background: var(--div_color);
     border-radius: var(--div_raduse);
     cursor: pointer;
-    margin: 20px 0px 2px 20px;
+    margin: 20px 30px 2px 20px;
 }
-#div_1::before{
-    src: url(/second_page.html);
-}
+
 #div_1::after {
     content:"";
     background-image: url(/pic/wallpaper.jpeg);
     position: absolute;
+    top:-20px;
+    left: 70%;
+    right: -10%;
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    border: 1px solid red;
-    margin: 10px 10px 0 auto;
-    transform: translate(280px, -50px);
+    margin: 0 0 0 auto;
     transition: 0.3s linear;
     background-size: 100px 100px;
     scale: 0.8;
-  }
+}
+
+
 #div_1:hover::after{
-    scale: 1.2;
-    transform: translate(200px,-20px);
+    scale: 0.9;
 }
   
 
@@ -127,16 +126,11 @@ main{
     height: fit-content;
     margin: 20px 0px 0px 50px;
     font-size: 20px;
-    
+    padding: 0 10px;
+    border-bottom: 3px solid green;
 }
-#a_aboutMe::before{
-    content:"hi";
+#text_body{
+    color: aliceblue;
+    text-align: center;
 }
-#a_aboutMe::after{
-    content: "";
-    position: absolute;
-    width: 90px;
-    margin: 0 px 0 0;
-    height: 20px;
-    border-bottom: 1px solid red;
-}
+ 
