@@ -142,4 +142,7 @@ main{
         display: flex;
         flex-direction: column;
     }
+    #div_1{
+        margin: 0 auto 0 auto;
+    }
  }
