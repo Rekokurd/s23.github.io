@@ -1,0 +1,91 @@
+.div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 400px;
+    height: fit-content;
+    background: var(--div_color);
+    border-radius: var(--div_raduse);
+    margin: 20px 30px 2px 20px;
+    box-shadow: 0px 0px 20px blue;
+    box-sizing: border-box;
+    transition: 1s linear;
+    user-select: none;
+}
+.div:hover{
+    background: rgb(16, 5, 64);
+   }
+   .div::before{
+       content: "";
+       width: 5px;
+       border-radius: 20px;
+       height: 5px;
+       background: red;
+       position: absolute;
+       bottom: 1px;
+       left: 15px;
+       animation: brdr infinite linear 1s  ;
+   }
+   @keyframes brdr{
+       0%{background: red; }
+       50%{ background: yellow;}
+       100%{ background: red;}
+   }
+   .div::after{
+       content:"";
+       position: absolute;
+       top:-20px;
+       left: 70%;
+       right: -10%;
+       width: 100px;
+       height: 100px;
+       border-radius: 50px;
+       margin: 0 0 0 auto;
+       transition: 0.3s linear;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       scale: 0.8;
+   }
+   #div_1::after {
+       content:"";
+       background-image: url(pic/wallpaper.jpeg);
+       position: absolute;
+       top:-20px;
+       left: 70%;
+       right: -10%;
+       width: 100px;
+       height: 100px;
+       border-radius: 50px;
+       margin: 0 0 0 auto;
+       transition: 0.3s linear;
+       background-size: 100px 100px;
+       scale: 0.8;
+   }
+   #div_2::after{
+       background-image: url(pic/F33CC5A0-ECF1-4D79-B81D-7509F73CD481.png);
+       background-size: 200%;
+       width: 70px;
+       background-position: -40px -43px;
+       height: 70px;
+       background-repeat: no-repeat;
+   }
+   #div_3::after{
+       width: 100px;
+       height: 100px;
+       background: red;
+       background-image: url(pic/wallpaper.jpeg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+   }
+   #div_1:hover::after{
+       scale: 0.9;
+   }  
+   #div_2:hover::after{
+       scale: 0.9;
+   }  
+   #div_3:hover::after{
+       scale: 0.9;
+   }  
