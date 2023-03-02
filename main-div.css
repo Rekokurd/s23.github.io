@@ -103,8 +103,8 @@
        background-repeat: no-repeat;
    }
    #div_3::after{
-       width: 100px;
-       height: 100px;
+       width: 90px;
+       height: 90px;
        background: red;
        background-image: url(pic/wallpaper.jpeg);
        background-repeat: no-repeat;
