@@ -90,7 +90,7 @@ main{
     display: flex;
     flex-direction: column;
     min-width: 300px;
-    max-width: fit-content;
+    max-width: 400px;
     height: fit-content;
     
     background: var(--div_color);
@@ -107,19 +107,19 @@ main{
 }
 #div_1::before{
     content: "";
-    width: 270px;
+    width: 5px;
     border-radius: 20px;
-    height: 2px;
+    height: 5px;
     background: red;
     position: absolute;
     bottom: 1px;
     left: 15px;
-    animation: brdr infinite linear 7s  ;
+    animation: brdr infinite linear 1s  ;
 }
 @keyframes brdr{
-    0%{ width: 270px;}
-    50%{ width: 0;}
-    100%{ width: 270px;}
+    0%{background: red; }
+    50%{ background: yellow;}
+    100%{ background: red;}
 }
 #div_1::after {
     content:"";
@@ -155,6 +155,8 @@ main{
     color: aliceblue;
     padding: 0 30px;
     margin-top: 20px;
+    max-width:300px;
+    overflow: hidden;
 }
 #div::after{
     content: "hii";
@@ -296,7 +298,7 @@ li{
     overflow: hidden;
     font-size: 13px;
 }
-ul{
+#ul_currency{
     direction: rtl;
     list-style-type:decimal;
     display: block;
@@ -305,31 +307,18 @@ ul{
     border-radius:6px;
     text-align:right;
 }
-i{
-    color: red;
-    margin-left: auto;
-    margin-right:auto;
-    -webkit-transform: translateY(20px);
-        -ms-transform: translateY(20px);
-            transform: translateY(20px);
-    scale: 1.2;
-    animation: ico 1s infinite;
-    position:relative ;
-    margin-bottom:20px;
-}
 @keyframes ico{
     0%{ scale: 1.2;}
     50%{scale: 1.4;}
     100%{scale:1.2;}
 }
-h2{
-    color:black;
-    text-align:center;
-}
 #buttonnext{
     margin:0 auto;
     height:20px;
     width:60px;
+}
+#warning_curency{
+ position: relative;   
 }
 @media only screen and (max-width : 600px) {
     body{
