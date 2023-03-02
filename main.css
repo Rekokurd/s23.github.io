@@ -125,11 +125,11 @@ li{
 .label{
     width: fit-content;
     height: fit-content;
-    border: 1px solid red;
     position: relative;
     color: white;
     margin-bottom: 20px;
     padding: 0 30px;
+    
 }
 .input{
     min-width: 20px;
@@ -139,8 +139,43 @@ li{
     position: relative;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    text-align: center;
     border: none;
+    appearance: none;
+    appearance: text-feild;
+}
+.input:focus{
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 #div_2{
     display:block;
+}
+#anjam{
+    background: rgb(24, 24, 140);
+    border: 1px solid aqua;
+    height: 30px;
+    color: aqua;
+    box-shadow: 0px 0px 10px 4px aqua;
+    width: 60px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 8px;
+    margin-bottom: 30px;
+}
+#anjam:hover{
+    box-shadow: 0 0 5px 2px aqua;
+    color: rgb(24, 24, 140);
+    background: aqua;
+}
+#result_input{
+    width: 100px;
+    height: 15px;
+    border-radius: 20px;
+    background: white;
+    color: aqua;
 }
