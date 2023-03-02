@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root{
     --background:rgb(35, 99, 173);
     --text_color:rgb(247, 236, 236);
@@ -9,13 +16,20 @@ a{
     text-decoration: none;
 }
 body{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     overflow-x: hidden;
     margin: 0%;
     background: var(--background);
 }
 nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 400px;
     margin: 10px auto 0 auto;
@@ -25,6 +39,8 @@ nav{
 #line_1{
     font-size: 20px;
     position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     border-radius: 20px;
     background: var(--warning);
@@ -32,6 +48,8 @@ nav{
     margin-right: auto ;
     padding: 10px;
     color: var(--text_color);
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
     cursor: pointer;
 }
@@ -40,15 +58,25 @@ nav{
     font-size: 27px;
     position: absolute;
     color: rgb(247, 6, 6);
-    transform: translate(30px, -34px);
+    -webkit-transform: translate(30px, -34px);
+        -ms-transform: translate(30px, -34px);
+            transform: translate(30px, -34px);
     display: inline;
     border-radius: 10px 10px 0 0;
     padding:1px 6px ;
     background: var(--warning);
     margin: 0 auto 0px auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     border-top: 3px solid var(--warning);
-    animation: warning_border infinite 1s linear;
+    -webkit-animation: warning_border infinite 1s linear;
+            animation: warning_border infinite 1s linear;
+}
+@-webkit-keyframes warning_border{
+    0%{border-top:3px solid var(--warning)}
+    50%{ border-top: 0px solid var(--warning) ;}
+    100%{ border-top: 3px solid var(--warning);}
 }
 @keyframes warning_border{
     0%{border-top:3px solid var(--warning)}
@@ -58,7 +86,9 @@ nav{
 #line_1::after{
     content: "Hello this webpage was created with JS, HTML, and CSS, and it is just for test.";
     position: absolute;
-    transform: translate(2px, 2px);
+    -webkit-transform: translate(2px, 2px);
+        -ms-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
     color: rgb(183, 135, 227);
     max-width: 200px;
     right: 20px;
@@ -66,30 +96,49 @@ nav{
     font-size: 12px;
     height: 0px;
     border-radius: 0px 0px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
     padding: 10px 0px 0px 9px;
     background: var(--warning);
+    -webkit-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
     transition: height 0.5s ease;
-    animation: hi infinite linear;
+    -webkit-animation: hi infinite linear;
+            animation: hi infinite linear;
 }
 
 #line_1:hover::after{
     height: 50px;
-    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+         -o-transition-delay: 0.2s;
+            transition-delay: 0.2s;
 }
 main{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
 }  
 
 
 .topic{
     color: aqua;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: 20px 0px 0px 50px;
     font-size: 20px;
@@ -103,6 +152,8 @@ main{
     margin-top: 0%;
     margin-bottom: 0%;
     overflow: hidden;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 .click_text{
@@ -123,7 +174,11 @@ li{
     margin-bottom: 1px;
 }
 .label{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     position: relative;
     color: white;
@@ -134,6 +189,8 @@ li{
 .input{
     min-width: 20px;
     max-width: 100px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 20px;
     position: relative;
@@ -141,8 +198,12 @@ li{
     border-bottom-left-radius: 10px;
     text-align: center;
     border: none;
-    appearance: none;
-    appearance: text-feild;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-appearance: text-feild;
+       -moz-appearance: text-feild;
+            appearance: text-feild;
 }
 .input:focus{
     outline: none;
@@ -160,7 +221,8 @@ input::-webkit-inner-spin-button {
     border: 1px solid aqua;
     height: 30px;
     color: aqua;
-    box-shadow: 0px 0px 10px 4px aqua;
+    -webkit-box-shadow: 0px 0px 10px 4px aqua;
+            box-shadow: 0px 0px 10px 4px aqua;
     width: 60px;
     border-radius: 20px;
     margin-left: 50px;
@@ -170,7 +232,8 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 #anjam:hover{
-    box-shadow: 0 0 5px 2px aqua;
+    -webkit-box-shadow: 0 0 5px 2px aqua;
+            box-shadow: 0 0 5px 2px aqua;
     color: rgb(24, 24, 140);
     background: aqua;
 }
@@ -187,8 +250,14 @@ input::-webkit-inner-spin-button {
     height: 20px;
     margin-bottom: 3px;
     position: relative;
-    animation: redOne 1s linear infinite;
+    -webkit-animation: redOne 1s linear infinite;
+            animation: redOne 1s linear infinite;
     
+}
+@-webkit-keyframes redOne{
+    0%{scale: 1;}
+    50%{scale: 1.5;}
+    100%{scale: 1;}
 }
 @keyframes redOne{
     0%{scale: 1;}
