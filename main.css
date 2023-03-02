@@ -166,6 +166,7 @@ input::-webkit-inner-spin-button {
     margin-left: 50px;
     margin-right: 8px;
     margin-bottom: 30px;
+    text-align: center;
     cursor: pointer;
 }
 #anjam:hover{
