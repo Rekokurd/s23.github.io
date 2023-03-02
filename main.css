@@ -166,6 +166,7 @@ input::-webkit-inner-spin-button {
     margin-left: 50px;
     margin-right: 8px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 #anjam:hover{
     box-shadow: 0 0 5px 2px aqua;
@@ -178,4 +179,30 @@ input::-webkit-inner-spin-button {
     border-radius: 20px;
     background: white;
     color: aqua;
+}
+#warning{
+    width: 20px;
+    margin-left: 100px;
+    height: 20px;
+    margin-bottom: 3px;
+    position: relative;
+    animation: redOne 1s linear infinite;
+    
+}
+@keyframes redOne{
+    0%{scale: 1;}
+    50%{scale: 1.5;}
+    100%{scale: 1;}
+}
+#here{
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    text-align: center;
+    border: 1px solid red;
+    padding: 2px 3px;
+    background: white;
+    color: rgb(16, 12, 126);
 }
