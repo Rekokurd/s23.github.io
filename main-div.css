@@ -37,7 +37,7 @@
 @media only screen and (max-width : 600px){
     .div{
         min-width:200px;
-        background:pink;
+        
     }
 }
 .div:hover{
