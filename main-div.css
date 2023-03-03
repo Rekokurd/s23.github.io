@@ -36,8 +36,8 @@
 }
 @media only screen and (max-width : 600px){
     .div{
-        display:block;
-        background:red;
+        min-width:200px;
+        background:pink;
     }
 }
 .div:hover{
