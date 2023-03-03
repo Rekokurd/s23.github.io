@@ -34,6 +34,12 @@
         -ms-user-select: none;
             user-select: none;
 }
+@media only screen and (max-width : 600px){
+    .div{
+        display:block;
+        background:red;
+    }
+}
 .div:hover{
     background: rgb(16, 5, 64);
    }
