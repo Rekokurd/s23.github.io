@@ -65,7 +65,7 @@
        top:-20px;
        left: 70%;
        right: -10%;
-       width: 100px;
+       max-width: 100px;
        height: 100px;
        border-radius: 50px;
        margin: 0 0 0 auto;
@@ -84,7 +84,7 @@
        top:-20px;
        left: 70%;
        right: -10%;
-       width: 100px;
+       max-width: 100px;
        height: 100px;
        border-radius: 50px;
        margin: 0 0 0 auto;
@@ -97,13 +97,13 @@
    #div_2::after{
        background-image: url(pic/F33CC5A0-ECF1-4D79-B81D-7509F73CD481.png);
        background-size: 200%;
-       width: 70px;
+       max-width: 70px;
        background-position: -40px -43px;
        height: 70px;
        background-repeat: no-repeat;
    }
    #div_3::after{
-       width: 90px;
+       max-width: 90px;
        height: 90px;
        background: red;
        background-image: url(pic/wallpaper.jpeg);
