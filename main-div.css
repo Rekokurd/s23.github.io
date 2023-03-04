@@ -14,8 +14,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 100px;
+    max-width: 500px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -34,10 +34,29 @@
         -ms-user-select: none;
             user-select: none;
 }
-@media only screen and (max-width : 600px){
-    .div{
-        min-width:200px;
+@media only screen and (max-width : 368px){
+    #div_2{
+        background: red;
+        display: flex;
+        align-items: center;
+        min-width: 300px;
         
+    }
+    .input{
+      margin-top: 0%;
+      transform: translate(0,0);
+    }
+    #label_1, #label_2, #label_3{
+        
+    }
+    .label{
+        margin-top: 2px;
+        height: fit-content;
+        border: 1px solid;
+        width: fit-content;
+        padding: 0%;
+        margin-bottom: 20px;
+
     }
 }
 .div:hover{

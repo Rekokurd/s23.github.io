@@ -193,6 +193,7 @@ li{
     height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 20px;
+    margin-right:20px ;
     position: relative;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
