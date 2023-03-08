@@ -4,7 +4,9 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
+:root{
+    --abdu: red;
+}
 .div {
     position: relative;
     display: -webkit-box;
@@ -59,10 +61,11 @@
 
     }
     #anjam{
-        transform: translate(-20px,0);
+        transform: translate(-20px, 0px);
     }
     #here{
-        transform: translate(-50px, 160px);
+        transform: translate(-50px, 175px);
+        
     }
     #warning{
         transform: translate(-100px, 2px);

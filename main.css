@@ -270,7 +270,7 @@ input::-webkit-inner-spin-button {
     height: 15px;
     position: absolute;
     left: 50%;
-    top: 170px;
+    top: 150px;
     text-align: center;
     border: 1px solid red;
     padding: 2px 3px;
