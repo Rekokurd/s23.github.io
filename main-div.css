@@ -8,6 +8,7 @@
     --abdu: red;
 }
 .div {
+    color: var(--abdu );
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,7 +75,7 @@
     .div::after{
         transform: scale(0.7) translate(0, -20px);
         height: 50px;
-        border-radius: ;
+        border-radius: 20px;
         border: 2px solid green;
         
         background: none;
