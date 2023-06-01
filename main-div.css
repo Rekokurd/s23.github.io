@@ -124,6 +124,9 @@
        background-position: center;
        scale: 0.8;
    }
+   #div_1{
+    display: none;
+   }
    #div_1::after {
        content:"";
        background-image: url(pic/wallpaper.jpeg);
